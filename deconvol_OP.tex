@@ -90,7 +90,7 @@ sources: application to a one-year study in Chamonix, France.}
 \affil[2]{Univ. Savoie Mont-Blanc, LCME, F-73 000 Chamb\'{e}ry, France.}
 \affil[3]{IFFSTAAR, F-69675 Bron, France.}
 \affil[4]{Aerosol d.o.o., Kamni\v{s}ka 41, 1000 Ljubljana, Slovenia.}
-\affil[5]{Condensed Physics Department, Jo\v{z}ef Stefan Institute, Ljubljana, Slovenia.}
+\affil[5]{Jo\v{z}ef Stefan Institute, Jamova 39, SI-1000 Ljubljana, Slovenia.}
 
 %% The [] brackets identify the author with the corresponding affiliation. 1, 2, 3, etc. should be inserted.
 
@@ -120,79 +120,79 @@ sources: application to a one-year study in Chamonix, France.}
 
 
 \begin{abstract}
-The particulate matter (PM) induces cellular oxidative stress in vivo
-and so lead to adverse health outcome. The oxidative potential (OP) of
-the PM appears to be a more relevant proxy of the health impact of the
+Inhaled aerosolized particulate matter (PM) induces cellular oxidative stress in vivo
+leads to adverse health outcomes. The oxidative potential (OP) of
+PM appears to be a more relevant proxy of the health impact of the
 aerosol rather than the total mass concentration. However, the relative
-contributions of the emission's sources of aerosols to the OP are still
-poorly known. In order to better quantify the impact of each PM source
-to the air quality, we sampled aerosols in a French city for one year
+contributions of the aerosol sources to the OP are still
+poorly known. In order to better quantify the impact of different PM sources, we sampled aerosols in a French city for one year
 (year 2014, 115 samples). A coupled analysis with detailed chemical speciation
 (more than 100 species, including organic and carbonaceous compounds,
-ions, metals and aethalomether measurements) and two OP assays (ascorbic
+ions, metals and Aethalometer measurements) and two OP assays (ascorbic
 acid (AA) and dithiothreitiol (DTT)) in a simulated lung fluid (SLF)
 were performed in these samples. We developed in this study a new
 statistical model using a coupled approach with Positive Matrix
-Factorisation (PMF) and multiple linear regressions to attribute a
-redox-activity per PM sources. Our results highlight the importance of
-the Biomass burning and Vehicular sources to explain the observed OP for
-both assays. In general see a different contribution of the sources when
+Factorization (PMF) and multiple linear regression to attribute a
+redox-activity to PM sources. Our results highlight the importance of
+the biomass burning and vehicular sources to explain the observed OP for
+both assays. In general, we see a different contribution of the sources when
 considering the OP AA, OP DTT or the mass of the PM\textsubscript{10}.
-Moreover, some significant differences are observed between the DTT and
-AA tests that emphasized the chemical specificities of the two tests and
+Moreover, significant differences are observed between the DTT and
+AA tests which emphasized chemical specificities of the two tests and
 the need of a standardized approach for the future studies on
 epidemiology or toxicology of the PM.
 \end{abstract}
 
 
-\copyrightstatement{TEXT}
+% \copyrightstatement{TEXT}
 
 
 \introduction  %% \introduction[modified heading if necessary]
-Particle pollution exposure is a growing concern due to its burden on human
-health, ranking as the 5\textsuperscript{th} risk factor for total deaths from
-all causes across ages and sexes in 2015 \citep{cohen_estimates_2017}. Such impact is
-assessed through cross-over studies based on health data and particulate matter
-(PM) mass concentrations
+Exposure of the population to pollution by airborne particles is a growing
+concern due to its burden on human health, ranking as the 5\textsuperscript{th}
+risk factor for total deaths from all causes across ages and sexes in 2015
+\citep{cohen_estimates_2017}. Such impact is assessed through cross-over studies
+based on health data and particulate matter (PM) mass concentrations
 \citep{pope_iii_air_2004,pope_iii_epidemiology_1999,who_ambient_2016}. However,
-the dominant fraction of the PM mass as ionic species or crustal elements makes
-little contribution to their toxicity \citep{ayres_evaluating_2008}.  Therefore,
-new metrics are currently investigated in order to better represent population
-exposure. Among them, the oxidative potential (OP) addresses the intrinsic
-capacity of PM to generate Reactive Oxygen Species (ROS) able to oxidize the
-lungs. It has been proposed as a unifying factor for particulate exposure as it
-relies on surface area, size and PM composition
-\citep{ayres_evaluating_2008,fang_oxidative_2016,kelly_size_2012,sauvain_differentiated_2009}.
+the dominant fraction of the PM mass are ionic species or crustal elements and
+these contribute little to PM toxicity \citep{ayres_evaluating_2008}.
+Therefore, new metrics are currently investigated in order to better quantify
+the effect of the population exposure. Among the different metrics, oxidative
+potential (OP) addresses the intrinsic capacity of PM to generate Reactive
+Oxygen Species (ROS) able to oxidize the lungs. It has been proposed as a
+unifying factor for quantifying the effects of particulate exposure as it relies
+on surface area, size and PM composition
+\citep{ayres_evaluating_2008,sauvain_differentiated_2009,kelly_size_2012,fang_oxidative_2016,crobeddu_oxidative_2017,abrams_associations_2017}.
 
-Many OP methodologies coexist, and none has yet become a standard. Since each OP
-methodology is somewhat specific to precise type of ROS or ROS-inducer
+Many methodologies to quantify OP exist, and none has become a standard so far. Since each OP
+methodology is somewhat specific to the precise type of ROS or ROS-inducer
 \citep{yang_measurement_2014}, a standard methodology should most probably
 include several assays in order to fully determine the ROS generation propensity
-\citep{janssen_associations_2015,sauvain_comparison_2013}. But this combination
+\citep{janssen_associations_2015,sauvain_comparison_2013}. Such a combination
 has not emerged yet, since the link between OP and chemical composition of PM is
 not fully understood, and OP drivers are not truly supported by evidence.
 
 Investigating the link between OP and chemistry of PM is not simple, since
 particles chemical composition is unique in every sampling point.  Moreover,
-univariate correlations can lead to false results: for example, strong OP
-correlations with Polycyclic aromatic hydrocarbon (PAH) can be found within
-dithiothreitol (DTT) assay \citep{calas_comparison_2018}, which are chemically
+univariate correlations can lead to false resultsr. For example, strong OP
+correlation with polycyclic aromatic hydrocarbon (PAH) can be found within
+dithiothreitol (DTT) assay \citep{calas_comparison_2018}. This correlation is chemically
 impossible since DTT, a reducing agent, needs redox-active compounds to be
 depleted \citep{ntziachristos_relationship_2007,shirmohammadi_fine_2016}. This
 correlation is now well explained since PAHs are co-emitted with quinones,
 oxy-PAH which are redox-active and able to oxidize DTT
 \citep{charrier_oxidant_2015,charrier_dithiothreitol_2012}. Linear multiple
-regression is not trivial to use either in determining OP factors, since extreme
+regression is not trivial to use in determining OP factors, since extreme
 outliers need to be removed, normal distributions are needed and negative
 contributions may be attributed to mathematically explain annual OP variations
 \citep{calas_comparison_2018}.
 
-Finally, another option is to consider the sources determined by Positive Matrix
+Another option is to consider the sources determined by Positive Matrix
 Factorization (PMF) as explanatory variables \citep{bates_reactive_2015}.
 Indeed, working directly with chemical species involves assessing an exhaustive
 composition characterization. This is rather impossible since many species in
 the complex mixture of aerosols remain unidentified.  Moreover, if a detailed
-composition (that sometimes can include up to 150 species
+composition (which can sometimes include up to 150 species
 \citep{waked_source_2014}) is provided, at least the same number of samples for
 OP measurements is needed, otherwise, the system remains underdetermined.
 Reducing the system by direct truncation is not possible since species
@@ -203,14 +203,15 @@ studies, making the system always overdetermined for most common studies,
 including generally a large series of samples.
 
 The objective of this study is to present a methodology for the evaluation of
-the contributions of common emission sources of particles to the overall OP of a
-series of PM\textsubscript{10}. The OP was measured on filter samples collected
+the contributions of common sources of particles to the overall OP for a long
+time series of PM\textsubscript{10} sample (PM with a diameter lower than
+10~\unit{\mu m}). The OP was measured on filter samples collected
 over a full year in the city of Chamonix (Alpine valley), using two OP
-protocols: the Ascorbic acid (AA) and dithiothreitol (DTT) assays. An inversion
-procedure of these OP measurements was developed using results on source
-contributions obtained from an advanced source-receptor model PMF
+protocols: the ascorbic acid (AA) and dithiothreitol (DTT) assays. An inversion
+procedure of these OP measurements was developed using source apportionment
+results obtained from an advanced source-receptor model PMF
 \citep{chevrier_chauffage_2016}, in order to attribute both an intrinsic OP to
-the emission sources and the evolution of the sources contributions to OP's over
+the sources and the evolution of the sources contributions to OP's over
 the year.
 
 
@@ -220,28 +221,28 @@ This work takes advantage of an already existing database, based on Particulate
 Matter (PM\textsubscript{10}) samples collected during the DECOMBIO program
 \citep{chevrier_decombio-contribution_2016}, with the chemical analyses and the
 source apportionment of PM having already been conducted
-\citep{chevrier_chauffage_2016}, and the OP measurements performed on the very
-same samples \citep{calas_comparison_2018}.  These different steps will be
-briefly presented below.
+\citep{chevrier_chauffage_2016}, and the OP measurements performed on the
+same samples \citep{calas_comparison_2018}.  These are briefly presented below.
 
 \subsection{Site and sampling}\label{site-and-sampling}
 
 Sampling took place in the city of Chamonix-Mont-Blanc (45\unit{^\circ}55.358\unit{^\prime}~N,
-6\unit{^\circ}52.194\unit{^\prime}~E), in the Alpine Arve Valley, at the bottom of the
-Mont-Blanc mountain (Figure~\ref{fig:cham}). The sampling site is located in the
+6\unit{^\circ}52.194\unit{^\prime}~E), in the Alpine Arve Valley, below Mont-Blanc (Figure~\ref{fig:cham}). The sampling site is located in the
 middle of the town, in a densely populated area, with the sampling cabin being
 close to a street. A one-year study was conducted from November,
-14\textsuperscript{th} 2013 to October, 31\textsuperscript{th} 2014, with
+14\textsuperscript{th} 2013 to October, 31\textsuperscript{th} 2014, with 24
+hour
 PM\textsubscript{10} sampling taking place every third day, giving a series of
 115 samples. These daily PM\textsubscript{10} samples were collected with a
-HiVol sampler (DA80, 30~\unit{m^3~h^{-1}}) on pre-fired Tissuquartz filters. All details
+high volume sampler (Digitel, DA80, 30~\unit{m^3~h^{-1}}) on pre-fired quartz
+filters (Pall, Tissuquartz). All details
 concerning the site and the logistical aspects of the sampling procedure can be
 found in \citet{chevrier_chauffage_2016}.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=8.3cm]{figures/fig01.png}
-    \caption{Localisation of the sampling site in Chamonix, in the Arve Valley,
+    \caption{Location of the sampling site in Chamonix, in the Arve Valley,
     France (45\unit{^\circ}55.358\unit{^\prime}~N,
 6\unit{^\circ}52.194\unit{^\prime}~E).  $\copyright$~Planete observer, IGN}
     \label{fig:cham}
@@ -249,10 +250,10 @@ found in \citet{chevrier_chauffage_2016}.
 
 \subsection{Chemical analyses }\label{chemical-analyses}
 
-All filters were analysed using a large array of methods for the quantification
+All filters were analyzed using a large array of methods for the quantification
 of chemical species including those important for the mass balance of the PM
-(EC, OC, ions\ldots{}) and many organic and inorganic tracers of emission
-sources. Briefly, the elements and components analyzed are:
+(EC, OC, ions\ldots{}) and many organic and inorganic tracers of
+sources. The elements and components analyzed are:
 
 \begin{itemize}
 \item
@@ -278,42 +279,50 @@ sources. Briefly, the elements and components analyzed are:
   hydrocarbons (PAHs) using HPLC-fluorescence \citep{golly_large_2015}.
 \end{itemize}
 
-Additionally, Black Carbon (eBC) measurements and the split between
-biomass-burning BC\textsubscript{bb} and fossil-fuel BC\textsubscript{ff} were
-maintained during the whole year with an Aethalometer model AE33
-\citep{sandradewi_using_2008}. All the procedures for these chemical analyses
-are described in detailed in \citet{chevrier_chauffage_2016}.
+Additionally, Black Carbon (BC) measurements were ongoing throughout the year,
+with wood burning BC\textsubscript{bb} and fossil fuel BC\textsubscript{ff}
+fractions determined using an Athalometer AE33 and the so called ``Aethalometer
+model'' \citep{sandradewi_using_2008,drinovec_dual-spot_2015}.  Although the BC
+measurements was performed on PM\textsubscript{2.5} samples, we decided to use
+it as \citet{jaffrezo_size_2005,cavalli_european_2016} show that the amount of EC in
+PM\textsubscript{10} and PM\textsubscript{2.5} is almost equivalent.
+
+All the procedures for these chemical analyses
+are described in detail in \citet{chevrier_chauffage_2016}.
 
 \subsection{\texorpdfstring{Source apportionment of PM\textsubscript{10}}{Source
 apportionment of PM10}}\label{source-apportionment-of-pm10}
 
-The source apportionment was achieved with Positive Matrix Factorization, using
+The source apportionment was performed with Positive Matrix Factorization, using
 the US EPA software PMF 5.0 \citep{us_epa_positive_2017}, following the
 recommendations included in the european guideline book issued in the EU Fairmode program
 \citep{belis_european_2014}. However, in the environment of Alpine valleys, the
 local meteorology and frequent inversion layers in winter lead to strong
 covariations of the concentrations of many chemical species emitted from the
-valley bottom. Therefore, we developed an approach including several
-specificities rarely applied in classic source apportionment in order to
-overcome this problem in the PMF resolution \citep{chevrier_chauffage_2016}.
+valley bottom.
+The covariation of the different pollutants adversely influences the ability of
+PMF to distinguish different sources.
+Therefore, we developed an approach including several
+specificities, rarely applied in classic source apportionment, in order to
+overcome this methodological problem in the PMF \citep{chevrier_chauffage_2016}.
 
 First, many tracers were included as input parameters, including specific
 organic tracers. The benefit of such approach was previously described
-\citep{golly_etude_2014,srivastava_speciation_2017,waked_source_2014}. In our
+\citep{golly_etude_2014,waked_source_2014,srivastava_speciation_2017}. In our
 case, we included hopanes (thereafter named HOP), methoxyphenols, polyols (sum
 of mannitol, arabitol and sorbitol), levoglucosan and MSA (methane sulfonic
-acid). The OC is then replaced by OC* which is the difference between the OC and
-the carbon equivalent of these species.
+acid). Instead of OC we used the difference (OC*) between the OC and
+the carbon equivalent of these previously analyzed species.
 
 Second, elemental carbon (EC), which is an important species for the
-deconvolution of combustion sources was replaced by
-BC\textsubscript{bb} and BC\textsubscript{ff} obtained by concurrent
-measurements with the Aethalometer model AE33. This provides a very strong
+deconvolution of combustion sources was in the PMF replaced by
+BC\textsubscript{bb} and BC\textsubscript{ff} obtained using the ``Aethalometer
+model'' by concurrent measurements with the Aethalometer AE33. This provides a very strong
 information on the sources, as already pointed out in other studies
 \citep{petit_two_2015}. No correction was introduced to compensate between EC
 and eBC \citep{zanatta_european_2016}.
 
-Finally, we took advantage of the possibilities of PMF 5.0 to apply some
+Finally, we took advantage of the possibilities of PMF 5.0 to apply
 constraints to the factor profiles, in order to better define the sources
 \citep{golly_etude_2014,srivastava_speciation_2017,salameh_impacts_2015}. A minimal set
 of geochemically sounded chemical constraints based on prior and external
@@ -341,7 +350,7 @@ used in the PMF study.
         & Total & \multicolumn{2}{c}{Carbonaceous matter} & Ions &
         \multicolumn{2}{c}{Organics compound} & Metals\\
         \middlehline
-        Specie & PM\textsubscript{10} & OC* &
+        Species & PM\textsubscript{10} & OC* &
         BC\textsubscript{bb}, BC\textsubscript{ff} & Cl\textsuperscript{-},
         NO\textsubscript{3}\textsuperscript{-},
         SO\textsubscript{4}\textsuperscript{2-}, Na\textsuperscript{+},
@@ -362,18 +371,19 @@ used in the PMF study.
 \subsection{Measurements of the Oxidative Potential of
 PM}\label{measurements-of-the-oxidative-potential-of-pm}
 
-All conditions are described in detail in \citet{calas_importance_2017}. In
-brief, we performed the extraction of the PM in a simulated lung fluid (SLF)
-solution to simulate the bio-accessibility of the PM and to be closer to the
-exposure conditions. The extraction took place with the same amount of PM by
+The methodology is described in detail in \citet{calas_importance_2017}. In
+brief, we performed the extraction of PM into the simulated lung fluid (SLF)
+solution to simulate the bio-accessibility of PM and to closer simulate
+exposure conditions. The extraction took place into SLF with the same amount of PM by
 mass for each sample (at 10~\unit{\mu g~mL^{-1}}), by adjusting the area of filter
 extracted. Samples were processed using the AA and DTT assays. DTT depletion
 when in contact with PM extracts was determined by dosing the remaining amount
-of DTT with DTNB (dithionitrobenzoic acid) at different reaction times and at
+of DTT with DTNB (dithionitrobenzoic acid) at different reaction times and 
+absorbance was measured at
 412~\unit{nm} using a plate spectrophotometer (Tecan, M200). The AA assay is a
 simplified version of the synthetic respiratory tract lining fluid (RTFL) assay
 \citep{kelly_protein_2003}, where only AA is used. AA depletion is read
-continuously for 30~\unit{min} at 265~\unit{nm} (TECAN, 200). The maximum depletion rate of AA
+continuously for 30~\unit{min} from absorbance at 265~\unit{nm} (TECAN, 200). The maximum depletion rate of AA
 is determined by linear regression of the linear section data. For both assays,
 the 96-wells plate is auto shaken for 3 seconds before each measurement and kept
 at 37~\unit{^\circ C}.
@@ -382,9 +392,10 @@ Only 98 samples out of the 115 collected were measured for OP, removing samples
 with insufficient PM mass concentration (\textless{}5~\unit{\mu g~m^{-3}}) that did
 not afford filter extraction at 10~\unit{\mu g~mL^{-1}}. The oxidative potential
 (OP) unit is then expressed in nmol per minute per microgram of PM. However, the
-population exposition is proportional to the inhaled PM. Therefore, the OP per
-microgram is multiplied by the total mass of PM per cubic meter in order to
-express the OP unit in \unit{nmol~min^{-1}~m^{-1}}. We should however keep in mind
+population exposition is (in the first order) proportional to the mass of the inhaled PM. Therefore, the OP per
+microgram was multiplied by the total mass concentration of PM (\unit{\mu
+g~m^{-3}}) in order to
+express the OP in unit of~\unit{nmol~min^{-1}~m^{-1}}. We should however keep in mind
 that this measurement of OP may not be the exact OP from PM inhaled by the
 population, since we suppose a linear relationship between the OP per~\unit{\mu g}
 of PM and the OP of the total amount of PM. Indeed, some cocktail effects
@@ -398,19 +409,18 @@ OP DTT\textsubscript{v}).
 
 \subsection{Evolution of the OP}\label{evolution-of-the-op}
 
-As already mentioned in \citet{calas_importance_2017}, both assays present a strong seasonality
-(see Figure~\ref{fig:OPts}) and both the OP AA\textsubscript{v} and OP
-DTT\textsubscript{v} results follow a yearly cycle. The
-OP\textsubscript{v} remains high during winter and low during summer.
-This observation tends to emphasize the importance of the PM sources
-which also follow a yearly cycle. However, we can also observe fast
-variations from day to day, that may be related to a change in the PM
-chemistry or to a change in PM concentration related to sources or
-meteorological conditions.
+Both assays present a strong seasonality (Fig.~\ref{fig:OPts}) as already
+mentioned in \citet{calas_importance_2017}, and both the OP AA\textsubscript{v}
+and OP DTT\textsubscript{v} results show seasonality. The OP\textsubscript{v}
+remains high during winter and low during summer.  This observation tends to
+emphasize the importance of PM sources which also show distinct seasonality.
+However, we can also observe fast variations from day to day, which may be
+related to a change in the PM chemistry or composition or a change in PM concentration
+related to sources or meteorological conditions.
 
 Despite both assays following the same annual trend, some significant
 differences exist. For instance, during summer, OP DTT\textsubscript{v}
-has some activity whereas the values of OP AA\textsubscript{v} are close
+has shows larger values, whereas the values of OP AA\textsubscript{v} are close
 to 0. Moreover, the variation of the OP AA\textsubscript{v} seems
 smoother than that of OP DTT\textsubscript{v}, especially during summer
 and fall (May to November). This underlines that the assays are
@@ -420,10 +430,10 @@ sensitive to different ROS.
     \centering
     \includegraphics[width=\textwidth]{figures/fig02}
     \caption{OP AA\textsubscript{v} and OP DTT\textsubscript{v} variation from
-        02 November 2013 to 31 October 2014 (98 samples) at the Chamonix station. The error
-        bars represents the uncertainties (standard deviation) of the
-        measurement. The OP unit is normalized by volume and is expressed
-        in~\unit{nmol~min^{-1}~m^{-3}}.  }
+        2 November 2013 to 31 October 2014 (98 samples) at the Chamonix
+        station. The error bars represent the uncertainties (standard
+        deviation) of the measurement. The OP unit is normalized by volume and
+        is expressed in~\unit{nmol~min^{-1}~m^{-3}}.  }
     \label{fig:OPts}
 \end{figure*}
 
@@ -431,30 +441,30 @@ sensitive to different ROS.
 
 The PMF was already thoroughly discussed in \citet{chevrier_chauffage_2016}. Briefly, 8
 sources were identified: biomass burning, crustal dust, nitrate rich,
-sulfate rich, primary and secondary biogenic emissions, salt and
+sulfate rich, primary biogenic emissions an secondary biogenic aerosol, salt and
 vehicular emissions. Their respective main chemical species and related
 information are provided in the Supplementary Information (SI 1). We
 mainly see that metals (notably copper) and some organics species are
 highly correlated to both OP, together with many fractions of the
 carbonaceous matter (OC, BC\textsubscript{bb} and BC\textsubscript{ff}, see SI 2).
-Figure~\ref{fig:PMFsrc} presents sources contributions to PM. Briefly, the dominant PM
+Figure~\ref{fig:PMFsrc} presents sources contributions to PM. The dominant PM
 source is biomass burning during winter with some daily concentrations
-greater than 40~\unit{\mu g~m^{-3}}. The primary and secondary
+exceeding 40~\unit{\mu g~m^{-3}}. The primary and secondary
 biogenic sources are mainly active during summer, as is the sulfate
-rich one. The vehicular source is quite constant all over the year. The
+rich source. The vehicular source is quite constant all over the year. The
 crustal dust contribution is sporadic and could include some Saharan
 episodes \citep{aymoz_evolution_2004}. Finally, the salt source is low but
 presents a high spike during March, being maybe related to road salting
 at that time of the year. The correlation between the OP and the sources
-are presented and discussed in the SI 2. Briefly, the Vehicular and
-Biomass burning sources appears strongly correlated to both OP.
+are presented and discussed in the SI 2. Briefly, the vehicular and
+biomass burning sources appears strongly correlated to both OP.
 
 \begin{figure*}[h]
     \centering
     \includegraphics[width=\textwidth]{figures/fig03}
-    \caption{Mass contribution of the eight PMF sources to the
-    PM\textsubscript{10} from 14 November 2013 to 31 October 2014 (107 samples) at the
-Chamonix station. Units are expressed in~\unit{\mu g~m^{-3}}.}
+    \caption{Mass concentrations of the eight PMF sources as fractions of PM\textsubscript{10} from 14 November 2013 to 31 October 2014 (107 samples)
+at the Chamonix station. Units are expressed in~\unit{\mu g~m^{-3}}. Note
+different scales on the source contributions.  }
     \label{fig:PMFsrc}
 \end{figure*}
 
@@ -463,7 +473,7 @@ regression}\label{setting-up-a-multiple-linear-regression}
 
 As the OP is a value of reactivity, it cannot be directly introduced in
 a mass-balance model. Hence, in order to estimate the contributions of
-the PM emissions of sources to the OP, we must use an inversion
+the PM sources to the OP, we must use an inversion
 method. Despite the possible non linearity of OP values with increasing
 masses of PM, as discussed below, we assume in this work that the OP is
 linearly linked to the mass. Thus, we hereafter assume that OP and the
@@ -475,7 +485,8 @@ m\textsubscript{PM}, are linearly related as follows
 \end{equation}
 where OP\textsubscript{obs} is the ($n\times1$) observed OP matrix in~\unit{nmol~min^{-1}~m^{-1}}, m\textsubscript{PM} the ($n\times(p+1)$)
 matrix with the PM mass attributed to each source expressed in~\unit{\mu g~m^{-3}} and a constant unity term with no unit
-for the intercept, and $\varepsilon$ the ($n\times1$) uncertainty matrix in~\unit{nmol~min^{-1}~m^{-1}}; n is the number of observations and
+for the intercept, and $\varepsilon$ the ($n\times1$) uncertainty matrix
+in~\unit{nmol~min^{-1}~m^{-1}}; n is the number of samples and
 p the number of sources. The estimator $\beta$ (matrix $(p+1)\times1$) represents
 the intrinsic OP of the sources (i.e. the OP per mass unit of PM
 attributed to a given source) and the intercept, expressed respectively
@@ -497,18 +508,19 @@ regression is conducted. The underlying algorithm is
 
 \begin{enumerate}
     \item
-        Solve the WLS problem and estimate the intrinsic OP
+        Solve the WLS problem and estimate the intrinsic OP,
     \item
-        If an intrinsic OP is negative, then set it to zero and go back to step 1
+        If an intrinsic OP is negative, then set it to zero and go back to step
+        1,
     \item
-        Repeat until all intrinsic OPs are positive or zero
+        Repeat until all intrinsic OPs are positive or zero.
 \end{enumerate}
 
 No source is discarded based on its p-value but only if its intrinsic OP
 is negative. We did not choose a direct non-negative least square
-approach as it would be a strong constraint in the model. In addition,
+approach as it would be a constraint in the model we believe is too strong. In addition,
 we can use the absence of negative coefficients as a test for the
-coherence of our dataset. Indeed, such approach may allow us to
+coherence of our dataset. Such approach may allow us to
 investigate which sources present a negative OP and why. This loop
 converges in a finite number of iterations, either to a situation with
 zero sources -- which would be discarded as absurd, pointing to a
@@ -517,8 +529,8 @@ with a lower number of sources. In our particular case, since OP
 measurements never display negative values or negative source
 contributions from the PMF, the method is strictly guaranteed to
 converge to an acceptable solution. Further, we expressly do not set the
-intercept to zero in equation \ref{eq:sys}, choosing instead to use this as a
-check on our method. Indeed, if the system is well constrained (i.e. no
+intercept to zero in Eq.~\ref{eq:sys}, choosing instead to use this as a
+check on our method. If the system is well constrained (i.e. no
 missing sources) the intercept should be close to zero within the model
 uncertainties, without any explicit constraint. The reciprocal situation
 could point to missing explanatory variables.
@@ -534,7 +546,7 @@ modelled OP, we bootstrap the solution $\beta$ 1000 times with a Monte-Carlo
 algorithm. The bootstrap simply selects randomly an intrinsic OP for
 each source according to their respective normal distribution.
 
-The algorithm was implemented in Python 3 making use of the
+The algorithm was implemented in Python~3 making use of the
 \emph{statsmodels} WLS module \citep{seabold_statsmodels:_2010}.
 
 \subsection{Application to the Chamonix site and
@@ -576,7 +588,7 @@ distribution of the residual is close to the normal law
 (Figure~\ref{fig:residual}).  However, we can note an asymmetry toward
 underestimation and residual seem to increase almost linearly with the
 endogenous variable (no random repartition around 0 for the highest OP). The OP
-is underestimated by the model for these high concentrated days. It may suggest
+is underestimated by the model for these days featuring concentrations. It may suggest
 either non-linearity with high loading (as suggested above), or particular event
 that is not apportioned by the sources provided in this study.
 
@@ -599,24 +611,28 @@ that is not apportioned by the sources provided in this study.
         (85 samples). The error bars represent the standard deviation of the
         observation and the model. The histogram on the right is the
         distribution of the residuals. Units are in OP normalized by volume and
-        expressed in~\unit{nmol~min^{-1}~m^{-1}}.}
+        expressed in~\unit{nmol~min^{-1}~m^{-1}}. Note different scales for the
+    AA\textsubscript{v} and the DTT\textsubscript{v}.}
     \label{fig:residual}
 \end{figure}
 
 \subsubsection{Intrinsic OP}\label{intrinsic-op}
 
 Values of the intrinsic OP of different sources for both the AA and DTT assays
-are ranging from zero to 0.18$\pm$0.01~\unit{nmol~min^{-1}~\mu g^{-1}} for the AA test and from
-0.06$\pm$0.02~\unit{nmol~min^{-1}~\mu g^{-1}} to 0.27$\pm$0.03~\unit{nmol~min^{-1}~\mu g^{-1}} for the DTT test
-(Table~\ref{tab:OPi}). The various sources do not have the same ability to generate ROS. We also
-note that the two tests present different intrinsic OP for the same source, and
-the relative importance of the sources differs from one test to the other. For
-instance, the vehicular source displays a lower intrinsic OP (0.15~\unit{nmol~min^{-1}~\mu g^{-1}})
-than the biomass burning (0.18~\unit{nmol~min^{-1}~\mu g^{-1}}) for the AA test but a higher
-intrinsic OP for the DTT test (0.27~\unit{nmol~min^{-1}~\mu g^{-1}} for the vehicular and
-0.07~\unit{nmol~min^{-1}~\mu g^{-1}} for the biomass burning).  This deconvolution method may be
-able to account for the chemical specificity of the two OP assays. In addition,
-the DTT test seems to be more multi-sources influenced than the AA test.
+are ranging from zero to 0.18$\pm$0.01~\unit{nmol~min^{-1}~\mu g^{-1}} for the
+AA test and from 0.06$\pm$0.02~\unit{nmol~min^{-1}~\mu g^{-1}} to
+0.27$\pm$0.03~\unit{nmol~min^{-1}~\mu g^{-1}} for the DTT test
+(Table~\ref{tab:OPi}). The various sources do not have the same ability to
+generate ROS. We also note that the two tests present different intrinsic OP for
+the same source, and the relative importance of the sources differs from one
+test to the other. For instance, the vehicular source displays a lower intrinsic
+OP (0.15~\unit{nmol~min^{-1}~\mu g^{-1}}) than the biomass burning
+(0.18~\unit{nmol~min^{-1}~\mu g^{-1}}) for the AA test but a higher intrinsic OP
+for the DTT test (0.27~\unit{nmol~min^{-1}~\mu g^{-1}} for the vehicular and
+0.07~\unit{nmol~min^{-1}~\mu g^{-1}} for the biomass burning).  This
+deconvolution method may be able to account for the chemical specificity of the
+two OP assays. In addition, the DTT test seems to be more multi-sources
+influenced than the AA test.
 
 Nevertheless, we clearly see the importance of the vehicular source, which is
 associated to a strong intrinsic OP in both the AA and DTT assays. Previous
@@ -626,25 +642,25 @@ explain such high intrinsic OP by the presence of metals in this source
 -- notably the copper \citep{charrier_oxidant_2015}.
 
 In the AA assay, the biomass burning also presents a high redox-activity
-per~\unit{\mu g} of PM. This result disagrees with \citet{fang_oxidative_2016} as they found no
-activity for this source in the OP AA test. Such difference for the biomass
-burning source may be explained by the two extraction protocols (in water or in
-a SLF solution) or by the proximity of the biomass source in Chamonix compared
-to the longer distance transport in Atlanta, that would change the chemistry of
-the source profile. However, the biomass burning in the OP DTT test has an
-intrinsic OP of 0.07$\pm$0.01~\unit{nmol~min^{-1}~m^{-1}}, which is coherent
-with the previous study of \citet{fang_oxidative_2016}. The presence of
+per~\unit{\mu g} of PM. This result disagrees with \citet{fang_oxidative_2016}
+as they found no activity for this source in the OP AA test. Such difference for
+the biomass burning source may be explained by the two extraction protocols (in
+water or in a SLF solution) or by the proximity of the biomass source in
+Chamonix compared to the longer distance transport in Atlanta, that would change
+the chemistry of the source profile. However, the biomass burning in the OP DTT
+test has an intrinsic OP of 0.07$\pm$0.01~\unit{nmol~min^{-1}~m^{-1}}, which is
+coherent with the previous study of \citet{fang_oxidative_2016}. The presence of
 oxygenated compounds such as quinones which are redox-active in the organic
 matter could explain this high intrinsic OP.
 
 The nitrate-rich source also appears to contribute in the redox-activity in both
-assays. Although the nitrate itself is not redox-active, it can be co-emitted
-with species that are oxidants. More work is needied in order to understand the
+assays. Although the nitrate itself is not redox-active, it can be present with
+species that are oxidants. More work is needied in order to understand the
 evolution of intrinsic OP for the nitrate rich factor, including measurements on
-series characterized by specific spring events related to agricultural activities, and
-series close to traffic sites for NO\textsubscript{x} emissions.
+series characterized by specific spring events related to agricultural
+activities, and series close to traffic sites for NO\textsubscript{x} emissions.
 
-The Primary biogenic source, mainly identified by the presence of polyols,
+The primary biogenic source, mainly identified by the presence of polyols,
 presents a significant intrinsic OP. This result was unexpected. Indeed,
 \citet{liu_therapeutic_2010} shows that mannitol is a strong anti-oxidant. Our
 result suggests that some chemical species, present in the primary biogenic
@@ -658,28 +674,30 @@ source.
 
 \begin{table*}
     \centering
-    \caption{Regression coefficients (i.e. Intrinsic OP) expressed in~\unit{nmol~min^{-1}~\mu g^{-1}} at Chamonix for the AA and DTT assays. The values are
-        the mean$\pm$standard deviation based on N=1000 bootstrap of the best
-        solution. The p-value is in the parenthesis. The Dust source was excluded during the inversion process for the AA
-        test.}
+    \caption{Regression coefficients (i.e. intrinsic OP) expressed
+        in~\unit{nmol~min^{-1}~\mu g^{-1}} at Chamonix for the AA and DTT
+        assays. The values are the mean$\pm$standard deviation based on N=1000
+        bootstrap of the best solution. The p-value is in the parenthesis. The
+        crustal dust source was excluded during the inversion process for the AA test.}
         \begin{tabularx}{\textwidth}{lXXXXXXXXp{2.2cm}}
         \tophline
-        & Biomass\newline burning & Crustal\newline dust & Nitrate\newline  rich & Primary\newline biogenic & Salt & Secondary\newline  biogenic &
+        & Biomass\newline burning & Crustal\newline dust & Nitrate\newline  rich
+        & Primary\newline biogenic & Sea/road\newline salt & Secondary\newline  biogenic &
         Sulfate\newline rich & Vehicular & Intercept\\
         \middlehline
         Unit & \multicolumn{8}{c}{\unit{nmol~min^{-1}~\mu g^{-1}}} & \unit{nmol~min^{-1}~m^{-1}}\\
         \middlehline
         AA & 
-        0.18$\pm$0.01\newline (0.000) & -\newline (-) &
-        0.12$\pm$0.02\newline (0.000) & 0.07$\pm$0.01\newline (0.000) &
+        0.18$\pm$0.01\newline (<0.001) & -\newline (-) &
+        0.12$\pm$0.02\newline (<0.001) & 0.07$\pm$0.01\newline (<0.001) &
         0.03$\pm$0.01\newline (0.140) & 0.02$\pm$0.04\newline (0.598) &
-        0.00$\pm$0.01\newline (0.942) & 0.15$\pm$0.02\newline (0.000) &
+        0.00$\pm$0.01\newline (0.942) & 0.15$\pm$0.02\newline (<0.001) &
         0.05$\pm$0.08\newline (0.502)\\
         DTT & 
-        0.07$\pm$0.01\newline (0.000) & 0.07$\pm$0.02\newline (0.003) &
-        0.07$\pm$0.02\newline (0.001) & 0.12$\pm$0.02\newline (0.000) &
-        0.14$\pm$0.03\newline (0.000) & 0.18$\pm$0.05\newline (0.000) &
-        0.06$\pm$0.02\newline (0.001) & 0.27$\pm$0.03\newline (0.000) & 
+        0.07$\pm$0.01\newline (<0.001) & 0.07$\pm$0.02\newline (0.003) &
+        0.07$\pm$0.02\newline (<0.001) & 0.12$\pm$0.02\newline (<0.001) &
+        0.14$\pm$0.03\newline (<0.001) & 0.18$\pm$0.05\newline (<0.001) &
+        0.06$\pm$0.02\newline (<0.001) & 0.27$\pm$0.03\newline (<0.001) & 
         0.17$\pm$0.08\newline (0.045)\\
         \bottomhline
     \end{tabularx}
@@ -688,22 +706,28 @@ source.
 
 \subsubsection{Contribution to the OP}\label{contribution-to-the-op}
 
+The aim of this study was to establish a deconvolution model for the OP. The
+results obtained with it will be discussed in depth in another study, including
+other sites. However, here are some preliminary results for the Chamonix
+station concerning the sources contribution.
+
 Due to the different intrinsic OP of the sources, the source contributions to
-the OP (intrinsic OP times by the source contribution in~\unit{\mu g~m^{-3}}) is different from their contribution to the PM
-mass.  Figure~\ref{fig:contributions} illustrates the normalized contribution of
-the sources to the mass of the aerosols and the OP measures with AA and DTT. It
-shows that the Vehicular source barely contributes to 17~\% of the total PM mass
+the OP (intrinsic OP times by the source contribution in~\unit{\mu g~m^{-3}}) is
+different from their contribution to the PM mass.
+Figure~\ref{fig:contributions} illustrates the normalized contribution of the
+sources to the mass of the aerosols and the OP measures with AA and DTT. It
+shows that the vehicular source barely contributes to 17~\% of the total PM mass
 during March-April-May (MAM) and June-July-August (JJA) but more than 30~\% to
 the OP DTT\textsubscript{v} in the same period, and even reaching around 50~\%
 of the OP AA\textsubscript{v} in JJA. Conversely, some sources largely
-contributing to the PM\textsubscript{10} mass such as the sulfate-rich
-source (30~\% of the total PM mass in JJA) do not contribute to the OP (2~\% to
-the OP AA\textsubscript{v} in the same period). Finally, some sources like the
-biomass burning contribute to a large extend in both PM mass and OP (on an
-    annual basis: 35~\% of the PM mass, 55~\% of the OP AA\textsubscript{v} and
-22~\% of the OP DTT\textsubscript{v}). We also note that on an annual basis, the
-contribution of the Vehicular source is much larger for both OP assays than
-for the mass.  All these outcomes are key parameters for policy initiatives.
+contributing to the PM\textsubscript{10} mass such as the sulfate-rich source
+(30~\% of the total PM mass in JJA) do not contribute to the OP (2~\% to the OP
+AA\textsubscript{v} in the same period). Finally, some sources like the biomass
+burning contribute to a large extend in both PM mass and OP (on an annual basis:
+35~\% of the PM mass, 55~\% of the OP AA\textsubscript{v} and 22~\% of the OP
+DTT\textsubscript{v}). We also note that on an annual basis, the contribution of
+the vehicular source is much larger for both OP assays than for the mass.  All
+these outcomes are key parameters for policy initiatives.
 
 To sum up, with this methodology, we observe a redistribution of the relative
 importance of the sources ranked as ROS contributors. This study gives, and more
@@ -741,7 +765,7 @@ sensitivity.
 Another debatable choice is setting the intrinsic OP to zero for the source with
 a negative intrinsic OP during the stepwise regression process. Some chemical
 species may act as anti-oxidants which lead to ``negative'' intrinsic OP for the
-associated PM source. Namely, the polyols from the Primary biogenic source, that
+associated PM source. Namely, the polyols from the primary biogenic source, that
 include species like mannitol, are known to present strong anti-oxidant
 capabilities \citep{liu_therapeutic_2010} and bacteria can halve the OP of
 copper-rich PM \citep{samake_unexpected_2017}. Further studies should focus on
@@ -766,26 +790,26 @@ The main conlusions of this study are summarized hereafter:
         The different sources present different OP AA and OP DTT per microgram of PM
         with intrinsic OP differences between sources up to a factor of 20.
     \item
-        The Biomass burning and Vehicular sources seem to be the leading sources of
+        The biomass burning and Vvhicular sources seem to be the leading sources of
         the OP AA\textsubscript{v} and OP DTT\textsubscript{v} in Chamonix. On an
         annual basis, they represent together 78~\% of the OP AA\textsubscript{v} and
         54~\% of the OP DTT\textsubscript{v} apportionment.
     \item
         The two OP essays present different view on the PM sources based on their
-        specific chemical selectivity as illustrated by the Salt source that does not
+        specific chemical selectivity as illustrated by the salt source that does not
         contribute to the OP AA\textsubscript{v} but to the OP DTT\textsubscript{v}.
     \item
         The relative mass contributions of the sources to the PM\textsubscript{10}
         differ from their relative OP AA\textsubscript{v} and OP DTT\textsubscript{v}
         contributions. For instance, the vehicular source has a larger contribution to
         the total OP AA and OP DTT than to the total PM\textsubscript{10} mass,
-        whereas the Sulfate rich source appears to be a minor source of OP
+        whereas the sulfate rich source appears to be a minor source of OP
         AA\textsubscript{v} but an important source of PM mass. If OP is a proper
         metric of health impact of PM on population, the PM mass is not fully
         appropriate for PM regulations targeting public health.
 \end{enumerate}
 
-Finally, even if now, OP metric is correlated to health outcomes, this study
+Finally, even if OP metric is correlated to health outcomes, this study
 cannot directly attribute toxicity to one source or another. Is sporadic
 exposure to PM with high OP values or chronical exposure to PM with low OP
 values sufficient to provoke health damage?  As the DTT and AA tests point
