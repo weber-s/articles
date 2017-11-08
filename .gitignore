@@ -3,7 +3,6 @@
 *.log
 *.blg
 *.out
-*.pdf
 *.sty
 *.cfg
 *.bst
